@@ -1,0 +1,12 @@
+h1{
+    border:2px solid purple;
+    text-align: center;
+    width: 50%;
+    color:gray;
+    background-color: aquamarine;
+    cursor: pointer;
+    border-radius: 25px;
+    border-style:initial;
+    position: relative;
+    left:300px;
+}
