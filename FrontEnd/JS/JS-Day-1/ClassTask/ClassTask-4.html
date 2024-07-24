@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+    <script>
+        function one(){
+            var a=document.getElementById("txt").value;
+            let s=document.getElementById("s").value;
+            let b="";
+            if(s=='length'){
+                b=a.length;
+            }
+            else if(s=='at'){
+                b=a.charAt(0);
+            }
+            else if(s=='slice'){
+                b=a.slice(3,6);
+            }
+            else if(s=='substr'){
+                b=a.substring(3,7);
+            }
+            else if(s=='subs'){
+                b=a.substr(4,8);
+            }
+            else if(s=='upp'){
+                b=a.toUpperCase();
+            }
+            else if(s=='low'){
+                b=a.toLowerCase();
+            }
+            else if(s=='con'){
+                b=a.concat(" ","world");
+            }
+            else if(s=='tr'){
+                b=a.trim();
+            }
+            else if(s=='ts'){
+                b=a.trimStart();
+            }
+            else if(s=='te'){
+                b=a.trimEnd();
+            }
+            else if(s=='rpt'){
+                b=a.repeat(3);
+            }
+            else if(s=='rp'){
+                b=a.replace("Thankyou","universe");
+            }
+            else if(s=='rpa'){
+                b=a.replaceAll("Thankyou","universe");
+            }
+            else if(s=='spl'){
+                b=a.split(" ").a[0];
+            }
+            else{
+                b="Wrong input";
+            }
+            document.getElementById("mult").innerHTML=b;
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <input type="text" placeholder="Enter the text" id="txt">
+        <select id="s">
+            <option value="length">Length</option>
+            <option value="at">charAt</option>
+            <option value="slice">Slice</option>
+            <option value="substr">Substring</option>
+            <option value="subs">Substr</option>
+            <option value="upp">Uppercase</option>
+            <option value="low">Lowercase</option>
+            <option value="con">Concat</option>
+            <option value="tr">Trim</option>
+            <option value="ts">Trim start</option>
+            <option value="te">Trim end</option>
+            <option value="rpt">Repeat</option>
+            <option value="rp">Replace</option>
+            <option value="rpa">ReplaceAll</option>
+            <option value="spl">Split</option>
+        </select><br><br>
+        <button onclick="one()">Click</button><br>
+        <p id="mult"></p>
+    </div>
+</body>
+</html>

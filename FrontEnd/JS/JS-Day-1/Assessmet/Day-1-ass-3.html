@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>star</title>
+        <script>
+            function star()
+            {
+                let a=document.getElementById("q3").value;
+                let s='';
+                for(let i=1;i<=a;i++)
+            {  
+                s+='* '.repeat(i)+"<br>";
+                
+            }
+            document.getElementById("ResultDiv").innerHTML =s+"<br>";
+            }
+            
+        </script>
+    </head>
+    <body>
+        Enter Input<input id="q3">
+        
+        <button onclick="star()">check</button>
+        <div id="ResultDiv"></div>
+    </body>
+</html>

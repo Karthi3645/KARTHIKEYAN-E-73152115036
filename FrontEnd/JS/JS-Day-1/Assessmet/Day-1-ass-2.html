@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Pallindrome</title>
+        <script>
+            
+        function pallindrome()
+        {
+            var str=document.getElementById("q2").value;
+          let rev=str.split('').reverse().join('');
+          console.log(rev);
+          if(str==rev)
+          document.getElementById("ResultDiv").innerHTML ="Check :"+ "yes,pallindrome";
+          else
+          document.getElementById("ResultDiv").innerHTML ="Prime :"+ "Not,pallindrome";
+        }
+    </script>
+    </head>
+    <body>
+        Enter Input<input id="q2"><br>
+        
+        <button onclick="pallindrome()">check</button>
+        <div id="ResultDiv"></div>
+    </body>
+</html>

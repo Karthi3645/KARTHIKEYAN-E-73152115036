@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>My Web Page</title>
+        <script>
+            function primeNumber()
+            {
+                let a=parseInt(document.getElementById("q1").value);
+                for(let i=0;i<8;i+=2)
+            {
+                let b=a%i;
+    
+                if(b==1||b==2||b==3||b==5||b==7)
+            {
+                document.getElementById("ResultDiv").innerHTML ="PrimeCheck :"+ "yes,primeNumber";
+            }
+            else{
+                document.getElementById("ResultDiv").innerHTML ="PrimeCheck :"+ "Not,primeNumber";
+            }
+            }
+            }
+        </script>
+    </head>
+    <body>
+        Enter a number:<input id="q1"><br>
+        <button onclick="primeNumber()">Check</button><br>
+        <div id="ResultDiv"></div>
+    </body>
+</html>
