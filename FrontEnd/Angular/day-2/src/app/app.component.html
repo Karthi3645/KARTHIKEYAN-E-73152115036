@@ -1,0 +1,23 @@
+<h1 [ngClass]="myClass">Structural and Attribute Example</h1>
+<br>
+<button (click)="changeflag()">show or hide div</button>
+<div *ngIf="flag">mydiv</div><br><br>
+<button (click)="change()">show or hide </button>
+<div *ngIf="fla" [ngStyle]="Mystyle">
+
+<br>
+<ul>
+    <li *ngFor="let a of vehicle"(click)="setSelectedItem(a)">{{a}}</li>
+</ul>
+<br>
+<h2>you are selected:{{selected}}</h2>
+<div [ngSwitch]="selected">
+    <font color="green" *ngSwitchCase="'two wheeler'">bike</font>
+    <font color="green" *ngSwitchCase="'bus'">redbus</font>
+    <font color="green" *ngSwitchCase="'car'">redTaxi</font>
+    <font color="green" *ngSwitchDEfault>Invalid</font>
+</div>
+<br>
+<button (click)="changestyle()">change style</button>
+<button (click)="changecolor()">change Color</button>
+</div>
