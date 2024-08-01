@@ -1,0 +1,43 @@
+<!-- <h1 [ngClass]="myClass">Structural and Attribute Example</h1>
+<br>
+<button (click)="changeflag()">show or hide div</button>
+<div *ngIf="flag">mydiv</div><br><br>
+<button (click)="change()">show or hide </button>
+<div *ngIf="fla" [ngStyle]="Mystyle">
+<br>
+<ul>
+    <li *ngFor="let a of vehicle"(click)="setSelectedItem(a)">{{a}}</li>
+</ul>
+<br>
+<h2>you are selected:{{selected}}</h2>
+<div [ngSwitch]="selected">
+    <font color="green" *ngSwitchCase="'two wheeler'">bike</font>
+    <font color="green" *ngSwitchCase="'bus'">redbus</font>
+    <font color="green" *ngSwitchCase="'car'">redTaxi</font>
+    <font color="green" *ngSwitchDEfault>Invalid</font>
+</div>
+<br>
+<button (click)="changestyle()">change style</button>
+<button (click)="changecolor()">change Color</button>
+</div>  
+<br><br> -->
+
+    <table width ="100%" align="center">
+        <tr>
+            <th><a routerLink="home">HOME</a></th>
+            <th><a routerLink="contact">CONACT</a></th>
+            <th><a routerLink="about">ABOUT</a></th>
+        </tr>
+    </table>
+    <div><br>
+        This Is Ths  Space For New Component.
+        <router-outlet></router-outlet>
+        
+    </div>
+    <h1>Addition : {{sum}}</h1>
+    <h1>subraction : {{sub}}</h1>
+
+<p>Child </p>
+<app-home></app-home>
+<br><br><br><br><br><br><br><br><br><br>
+<app-about></app-about>
